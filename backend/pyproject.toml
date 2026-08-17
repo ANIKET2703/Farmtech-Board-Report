@@ -33,5 +33,24 @@ packages = ["app", "pipeline"]
 line-length = 100
 target-version = "py310"
 
+# Rules are selected explicitly: with no `select`, the effective rule set is
+# whatever the installed ruff version happens to default to, so a new ruff
+# release silently changes what CI enforces.
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B", "C4", "UP", "PERF", "ISC", "BLE", "SIM", "RET"]
+# E501 (line length) is intentionally not enforced: long prose strings in the
+# LLM prompts and validation messages read better unwrapped.
+
+[tool.ruff.lint.flake8-bugbear]
+# `Depends()` / `Query()` in a parameter default is the prescribed FastAPI
+# idiom for dependency injection, not the mutable-default bug B008 looks for.
+extend-immutable-calls = [
+    "fastapi.Depends",
+    "fastapi.Query",
+    "fastapi.Path",
+    "fastapi.Body",
+    "fastapi.Header",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

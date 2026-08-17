@@ -72,8 +72,10 @@ def compute_valuation(facts_by_period: dict[str, dict[str, float]],
         "guidance_path": path,
         "caveats": [
             LIQUIDITY_CAVEAT,
-            "EV uses the HY26 (31 Dec 2025) balance sheet, the latest published. "
-            "Contingent consideration of EUR 1.14m (Terravue, performance-linked) is "
-            "excluded from net debt and itemised on the Solvency page.",
+            (
+                "EV uses the HY26 (31 Dec 2025) balance sheet, the latest published. "
+                "Contingent consideration of EUR 1.14m (Terravue, performance-linked) is "
+                "excluded from net debt and itemised on the Solvency page."
+            ),
         ],
     }

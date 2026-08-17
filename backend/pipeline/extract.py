@@ -174,7 +174,7 @@ def extract_all(source_dir: Path, out_dir: Path) -> None:
             try:
                 result = extract_document(pdf_path, client)
                 break
-            except Exception as exc:  # truncation, schema miss, transient API error
+            except Exception as exc:  # noqa: BLE001 - retry any API/schema/truncation error
                 print(f"  attempt {attempt} failed: {exc}")
         if result is None:
             failures.append(pdf_path.name)

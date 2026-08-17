@@ -38,7 +38,7 @@ def metrics_context_string(db: Session) -> str:
             # 6.15 to "6" would break the numeric grounding check downstream
             v = f"{value:g}" if abs(value) < 1000 else f"{value:,.0f}"
             lines.append(f"{period} {code} = {v}")
-    for category, metrics in compute_all(fbp).items():
+    for metrics in compute_all(fbp).values():
         for m in metrics:
             if m["value"] is not None:
                 v = f"{m['value']:.4f}" if m["unit"] in ("pct", "ratio", "x") else f"{m['value']:,.0f}"
@@ -48,11 +48,16 @@ def metrics_context_string(db: Session) -> str:
     from app.services.valuation import compute_valuation
     val = compute_valuation(fbp)
     if val.get("available"):
-        for key in ("market_cap", "net_debt", "enterprise_value", "ltm_revenue"):
-            lines.append(f"MKT {key} = {val[key]:,.0f}")
+        lines.extend(
+            f"MKT {key} = {val[key]:,.0f}"
+            for key in ("market_cap", "net_debt", "enterprise_value", "ltm_revenue")
+        )
         lines.append(f"MKT ev_ltm_revenue = {val['ev_ltm_revenue']} (x)")
         if val.get("price_vs_admission") is not None:
             lines.append(f"MKT price_vs_admission = {val['price_vs_admission']:.4f} (pct)")
-        for r in val["guidance_path"]:
-            lines.append(f"{r['year']}E guidance_revenue = {r['revenue']:,.0f}; implied_ev_revenue = {r['implied_ev_revenue']} (x)")
+        lines.extend(
+            f"{r['year']}E guidance_revenue = {r['revenue']:,.0f}; "
+            f"implied_ev_revenue = {r['implied_ev_revenue']} (x)"
+            for r in val["guidance_path"]
+        )
     return "\n".join(lines)

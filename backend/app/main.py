@@ -4,8 +4,17 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import (auth, chat, documents, insights, metrics, scenario, statements,
-                     validation, valuation)
+from app.api import (
+    auth,
+    chat,
+    documents,
+    insights,
+    metrics,
+    scenario,
+    statements,
+    validation,
+    valuation,
+)
 from app.core.config import get_settings
 from app.core.db import Base, engine
 
@@ -30,7 +39,7 @@ async def lifespan(_: FastAPI):
             from pipeline.embed import embed_documents
             try:
                 embed_documents()
-            except Exception as exc:  # chunking requires source PDFs; optional in prod image
+            except Exception as exc:  # noqa: BLE001 - optional step, must never crash startup
                 print(f"embed skipped: {exc}")
 
         threading.Thread(target=_embed, daemon=True).start()

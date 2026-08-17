@@ -27,7 +27,7 @@ def _get_embedder():
 
 
 def _cosine(a: list[float], b: list[float]) -> float:
-    dot = sum(x * y for x, y in zip(a, b))
+    dot = sum(x * y for x, y in zip(a, b, strict=True))
     na = math.sqrt(sum(x * x for x in a))
     nb = math.sqrt(sum(y * y for y in b))
     return dot / (na * nb) if na and nb else 0.0
@@ -53,7 +53,7 @@ def retrieve(db: Session, query: str, top_k: int = TOP_K) -> list[dict]:
         tokenised = [c.content.lower().split() for c in chunks]
         bm25 = BM25Okapi(tokenised)
         scores = bm25.get_scores(query.lower().split())
-        scored = list(zip(scores, chunks))
+        scored = list(zip(scores, chunks, strict=True))
 
     scored.sort(key=lambda t: t[0], reverse=True)
     docs = {d.id: d for d in db.query(Document).all()}
