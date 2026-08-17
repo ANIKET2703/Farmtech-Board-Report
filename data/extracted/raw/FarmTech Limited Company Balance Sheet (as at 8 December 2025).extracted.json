@@ -1,0 +1,348 @@
+{
+  "document_filename": "FarmTech Limited Company Balance Sheet (as at 8 December 2025).pdf",
+  "line_items": [
+    {
+      "line_code": "tangible_assets",
+      "label": "Tangible assets",
+      "value": 51071.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "investments",
+      "label": "Investments",
+      "value": 4.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "debtors",
+      "label": "Debtors",
+      "value": 350695.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "cash",
+      "label": "Cash and cash equivalents",
+      "value": 708028.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "creditors_lt_1yr",
+      "label": "Creditors: amounts falling due within one year",
+      "value": -369880.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "net_current_assets",
+      "label": "Net Current Assets",
+      "value": 688843.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "total_assets_less_current_liabilities",
+      "label": "Total Assets less Current Liabilities",
+      "value": 739919.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "creditors_gt_1yr",
+      "label": "Creditors: amounts falling due after more than one year",
+      "value": -106068.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "net_assets",
+      "label": "Net Assets",
+      "value": 633851.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "share_capital",
+      "label": "Called up share capital presented as equity",
+      "value": 33500.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "retained_earnings",
+      "label": "Retained earnings",
+      "value": 600351.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "total_equity",
+      "label": "Equity attributable to owners of the company",
+      "value": 633851.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 6,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "depreciation_charge",
+      "label": "Depreciation of tangible assets",
+      "value": -13419.0,
+      "period_label": "HY26",
+      "statement": "pnl",
+      "page_number": 11,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "loss_on_disposal_tangible",
+      "label": "Loss on disposal of tangible assets",
+      "value": -138.0,
+      "period_label": "HY26",
+      "statement": "pnl",
+      "page_number": 11,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "research_development",
+      "label": "Research and development - expenditure in current financial year",
+      "value": -13151.0,
+      "period_label": "HY26",
+      "statement": "pnl",
+      "page_number": 11,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "fx_loss",
+      "label": "Loss on foreign currencies",
+      "value": -200.0,
+      "period_label": "HY26",
+      "statement": "pnl",
+      "page_number": 11,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "interest_expense",
+      "label": "Interest",
+      "value": -892.0,
+      "period_label": "HY26",
+      "statement": "pnl",
+      "page_number": 11,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "trade_debtors",
+      "label": "Trade debtors",
+      "value": 18591.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "amounts_owed_by_group",
+      "label": "Amounts owed by group undertakings",
+      "value": 175945.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "taxation_receivable",
+      "label": "Taxation",
+      "value": 76030.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "prepayments",
+      "label": "Prepayments",
+      "value": 24948.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "accrued_income",
+      "label": "Accrued income",
+      "value": 55181.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "bank_loans",
+      "label": "Amounts owed to credit institutions",
+      "value": -13518.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "trade_creditors",
+      "label": "Trade creditors",
+      "value": -70507.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "taxation_payable",
+      "label": "Taxation",
+      "value": -25101.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "other_creditors",
+      "label": "Other creditors",
+      "value": -5786.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "accruals",
+      "label": "Accruals",
+      "value": -128006.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "deferred_income",
+      "label": "Deferred Income",
+      "value": -126962.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 12,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "bank_loan_lt",
+      "label": "Bank loan",
+      "value": -106068.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 13,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "share_capital_beginning",
+      "label": "Called up share capital",
+      "value": 193.0,
+      "period_label": "FY25",
+      "statement": "bs",
+      "page_number": 7,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "share_premium_beginning",
+      "label": "Share premium account",
+      "value": 1138949.0,
+      "period_label": "FY25",
+      "statement": "bs",
+      "page_number": 7,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "retained_earnings_beginning",
+      "label": "Retained earnings",
+      "value": -1038710.0,
+      "period_label": "FY25",
+      "statement": "bs",
+      "page_number": 7,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "total_equity_beginning",
+      "label": "Total",
+      "value": 100432.0,
+      "period_label": "FY25",
+      "statement": "bs",
+      "page_number": 7,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "loss_for_year",
+      "label": "Loss for the financial year",
+      "value": -578788.0,
+      "period_label": "HY26",
+      "statement": "pnl",
+      "page_number": 7,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "share_issue_proceeds_capital",
+      "label": "Net proceeds of equity ordinary share issue",
+      "value": 33307.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 7,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "share_issue_proceeds_premium",
+      "label": "Net proceeds of equity ordinary share issue",
+      "value": 1112185.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 7,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "share_premium_reduction",
+      "label": "Other movements in equity attributable to owners",
+      "value": -2251134.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 7,
+      "confidence": 0.95
+    },
+    {
+      "line_code": "retained_earnings_transfer",
+      "label": "Other movements in equity attributable to owners",
+      "value": 2217849.0,
+      "period_label": "HY26",
+      "statement": "bs",
+      "page_number": 7,
+      "confidence": 0.95
+    }
+  ],
+  "notes": "This is a balance sheet as at 8 December 2025. The date 08 December 2025 falls in the 6-month period after 30 June 2025 (fiscal year end), so it maps to HY26. The Statement of Changes in Equity shows the opening position at 30 June 2025 (FY25) and movements during the period to 08 December 2025 (HY26). The loss for the financial year of (431,931) is shown in parentheses indicating a negative value. Note 11 provides the breakdown. Note 6 shows tangible assets detail with depreciation charges. Values extracted exactly as printed. All amounts in Euro."
+}

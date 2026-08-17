@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+*.db-journal
+.env
+node_modules/
+.next/
+out/
+.vercel
+.DS_Store
+nohup.out
+.fuse_hidden*
+*.tsbuildinfo
+*.egg-info/
+build/
