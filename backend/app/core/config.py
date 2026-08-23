@@ -24,6 +24,9 @@ class Settings(BaseSettings):
     github_token: str | None = None
     openai_api_key: str | None = None
     openai_base_url: str = "https://models.github.ai/inference"
+    # Reasoning models bill internal thinking against the output budget.
+    # Set to "none"/"low" on such models so the budget is spent on prose.
+    openai_reasoning_effort: str | None = None
     openai_model: str = "openai/gpt-4o"
 
     jwt_secret: str = "dev-only-change-me"

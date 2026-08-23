@@ -38,9 +38,14 @@ def complete(system: str, user_content: str, max_tokens: int = 1200) -> tuple[st
         from openai import OpenAI
         client = OpenAI(base_url=s.openai_base_url,
                         api_key=s.openai_api_key or s.github_token)
+        # Gemini 3.x and o-series count reasoning tokens against max_tokens,
+        # so without this a small budget returns a truncated half-sentence.
+        extra = ({"reasoning_effort": s.openai_reasoning_effort}
+                 if s.openai_reasoning_effort else {})
         r = client.chat.completions.create(
             model=s.openai_model, max_tokens=max_tokens,
             messages=[{"role": "system", "content": system},
-                      {"role": "user", "content": user_content}])
+                      {"role": "user", "content": user_content}],
+            **extra)
         return (r.choices[0].message.content or "").strip(), s.openai_model
     raise RuntimeError("No LLM provider configured")

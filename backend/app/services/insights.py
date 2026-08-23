@@ -94,14 +94,14 @@ def get_or_generate(db: Session, audience: str, section: str, period: str,
     prompt = (f"Audience: {AUDIENCE_FRAMING[audience]}.\n"
               f"Section: {section}. Reporting period focus: {period}.\n\n"
               f"Validated metrics:\n{metrics_context}\n\nWrite the commentary.")
-    text, model_used = complete(SYSTEM, prompt, max_tokens=600)
+    text, model_used = complete(SYSTEM, prompt, max_tokens=1500)
 
     ungrounded = verify_grounding(text, metrics_context)
     if ungrounded:
         # fail closed: retry once with explicit correction, else refuse
         retry_prompt = (prompt + f"\n\nYour previous draft used numbers not in the metrics "
                         f"table: {ungrounded}. Rewrite using only table values.")
-        text, model_used = complete(SYSTEM, retry_prompt, max_tokens=600)
+        text, model_used = complete(SYSTEM, retry_prompt, max_tokens=1500)
         if verify_grounding(text, metrics_context):
             return {"content": None, "model": model_used, "cached": False,
                     "error": "Commentary failed numeric grounding verification and was rejected."}
