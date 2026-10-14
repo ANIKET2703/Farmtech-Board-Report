@@ -1,6 +1,6 @@
 # FarmTech PLC Board Report
 
-![CI](https://github.com/ANIKET2703/farmtech-board-report/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/ANIKET2703/Farmtech-Board-Report/actions/workflows/ci.yml/badge.svg)
 
 **Personal project · Aniket Nimbalkar**
 
@@ -10,11 +10,14 @@ computes the board metrics with a deterministic (non-AI) metrics engine, and pre
 the result as an interactive board report for four audiences: Management, the Board,
 Equity Investors and Credit Providers.
 
-- **Repo:** https://github.com/ANIKET2703/farmtech-board-report
-- **Live demo:** _redeploy under the new repo/name and add your new URL here_
-- **Demo video:** _record a new walkthrough under the FarmTech branding and add the link here (the old video shows the real company name/data and must not be reused)_
+- **Repo:** https://github.com/ANIKET2703/Farmtech-Board-Report
+- **Live demo:** https://farmtech-board-report.vercel.app
+- **API:** https://farmtech-board-report-api.onrender.com/health
 - **One-page write-up:** [docs/ONE_PAGE_WRITEUP.md](docs/ONE_PAGE_WRITEUP.md)
 - Demo login: `ceo@farmtech.com` / `farmtech2030`
+
+> The API runs on a free tier that sleeps after inactivity, so the first request
+> after an idle period takes up to a minute to wake. Subsequent pages are fast.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Aniket Nimbalkar · Personal project**
 
-**Live demo:** _add your new deployment URL here_ · **Video:** _add a new walkthrough recorded under the FarmTech branding_ · **Repo:** https://github.com/ANIKET2703/farmtech-board-report · Login: `ceo@farmtech.com` / `farmtech2030`
+**Live demo:** https://farmtech-board-report.vercel.app · **Repo:** https://github.com/ANIKET2703/Farmtech-Board-Report · Login: `ceo@farmtech.com` / `farmtech2030`
 
 ## What I built
 
